@@ -3,9 +3,33 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>form events</title>
 </head>
-<body>
-    
+<body> 
+     <!--this is an onfocus event-->
+    <script>   
+function highlightInput(elm){
+ elm.style.background = "green";
+        }    
+    </script>  
+    <input type="text" onfocus="highlightInput(this)">
+    <button type="button">Button</button>
+    <!--this is an onblur event-->
+    <input type="text" onblur="alert('Text input loses focus!')">
+    <button type="button">Submit</button>
+	<p><strong>Note:</strong> First click inside the text input box then click outside to see how it works.</p>
+    <!--this is an onchange event-->
+    <select onchange="alert('You have changed the selection!');">
+        <option>Select</option>
+        <option>Male</option>
+        <option>Female</option>
+    </select>
+	<p><strong>Note:</strong> Select any option in select box to see how it works.</p>
+     <!--this is an onsubmit event-->
+     <form action="/examples/html/action.php" method="post" onsubmit="alert('Form data will be submitted to the server!');">
+        <label>First Name:</label>
+        <input type="text" name="first-name" required>
+        <input type="submit" value="Submit">
+    </form>
 </body>
 </html>
