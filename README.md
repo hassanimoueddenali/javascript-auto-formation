@@ -1,5 +1,5 @@
 # javascript-auto-formation
- ##variables est types des donnes
+ - variables est types des donnes
 output / input
 expréssion et opérateurs
 condition
