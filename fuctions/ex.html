@@ -8,19 +8,17 @@
 <body>
      <script>
         //declaration de variable
-        var listNombre
-        var nombre
-        var userinpute
-        //saisir
-        listNombre =[];
-        nombre = 5;
+      
+        var listNombre=[];
+        var nombre= 5;
+       
         //traitment
         for( i=0 ; i<=nombre ; i++ ){
               userinpute = parseInt(prompt('Entrer :'));
               listNombre[i] = userinpute;
         }
         for( i=0 ; i<=nombre ; i++ ){
-            if (listNombre[i] != 0 ){
+            if (listNombre[i] < 0 ){
                 alert(listNombre[i])
             }
         }
