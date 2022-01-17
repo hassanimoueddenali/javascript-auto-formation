@@ -6,10 +6,11 @@
     <title>Document</title>
 </head>
 <body>
-    <h1 id="header">hello please chose a clore bettewen blue red or green</h1>
+    <h1 id="header">hello</h1>
     <input type="text" id="inp">
     <button onclick="pressed()">click</button>
     <script>
+        alert("please chose the color green red or blue")
       function pressed(){
           var text = document.getElementById("inp").value;
           switch(text){
@@ -23,6 +24,7 @@
               document.getElementById("header").style.color = "green" ;
                  break ;
               default :
+              document.getElementById("header").style.color ="black"
               document.getElementById("header").innerHTML ="please use either the color red or blue or green"
           }
       }
