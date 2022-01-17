@@ -7,9 +7,18 @@
 </head>
 <body>
     <input type="text" id="inp">
-    <button></button>
+    <button onclick="pressed()">click</button>
     <script>
-
+      function pressed(){
+          var text = document.getElementById("inp").value;
+          switch(text){
+              case "red" :
+                  document.getElementById("inp").style.color = "red"
+                  break ;
+              case "blue":
+              document.getElementById("inp").style.color = "blue"
+          }
+      }
     </script>
 </body>
 </html>
