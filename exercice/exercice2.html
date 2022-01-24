@@ -1,0 +1,28 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exercice 2</title>
+</head>
+<body>
+    <p>variable 1</p>
+    <input  id="var1"> <br><br>
+    <button onclick="changer">changer</button>
+    <p>variable 2 </p>
+    <input id="var2">
+    <script>
+        let variable1 = document.getElementById("var1") ;
+        let variable2 = document.getElementById("var2") ; 
+        let variable3 ;
+        function  changer(){
+         variable3 = variable2 ,
+         variable2 = variable1 ,
+         variable1 = variable3 
+
+         document.getElementById("var1").innerHTML =variable1 ;
+         document.getElementById("var2").innerHTML =variable2 ;
+        };
+    </script>
+</body>
+</html>
